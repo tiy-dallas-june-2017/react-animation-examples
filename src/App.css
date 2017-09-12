@@ -1,0 +1,76 @@
+.App {
+  text-align: center;
+}
+
+nav a {
+  margin: 10px;
+}
+
+.transition-class {
+  background-color: blue;
+  height: 50px;
+  transition: all 2s;
+  width: 50%;
+}
+
+.transition-class-override {
+  height: 200px;
+}
+
+
+.animatable-thing {
+  background-color: yellow;
+  height: 100px;
+  width: 100px;
+}
+
+.animated {
+  animation-direction: alternate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-name: twirl;
+}
+
+@keyframes twirl {
+  from {
+    height: 100px;
+    width: 100px;
+  }
+
+  to {
+    height: 300px;
+    width: 100px;
+  }
+}
+
+
+.transition-group-example ul {
+  padding: 20px;
+}
+
+.transition-group-example li {
+  border: solid 1px #CCC;
+  list-style-type: none;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+
+
+
+
+.transition-group-example li {
+  background-color: #000;
+  opacity: 0.01;
+  position: relative;
+  left: -1000px;
+  transform: rotate(90deg);
+  transition: all 0.5s;
+}
+
+.transition-group-example li.showing {
+  background-color: #FFF;
+  left: 0;
+  opacity: 1;
+  transform: rotate(0);
+}
